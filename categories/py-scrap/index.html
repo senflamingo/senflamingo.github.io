@@ -12,6 +12,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
   
@@ -294,32 +308,6 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/07/01/聚类模型（纯文字_草纸/" itemprop="url">
-              
-                <span itemprop="name">聚类模型（纯文字）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-01T00:00:00+08:00" content="2019-07-01">
-          07-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
             <a class="post-title-link" href="/2019/07/01/缺失数据处理（纯文字_草纸/" itemprop="url">
               
                 <span itemprop="name">缺失数据处理（纯文字）</span>
@@ -349,6 +337,32 @@
             <a class="post-title-link" href="/2019/07/01/马氏距离、python导入导出数据（草纸/" itemprop="url">
               
                 <span itemprop="name">马氏距离、python导入数据（纯文字）</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-07-01T00:00:00+08:00" content="2019-07-01">
+          07-01
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/07/01/聚类模型（纯文字_草纸/" itemprop="url">
+              
+                <span itemprop="name">聚类模型（纯文字）</span>
               
             </a>
         
@@ -417,7 +431,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
