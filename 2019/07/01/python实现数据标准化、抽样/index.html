@@ -100,17 +100,17 @@
 
 
 
-<meta name="description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta name="description" content="python实现数据标准化 Python3实现常用数据标准化方法    python实现数据抽样 Python pd.sample函数numpy.random.seed()函数    划分数据  Python 基本操作- 数据选取loc、iloc、ix函数      Python 基本操作- 数据选取loc、iloc、ix函数      python中的del用法      python的asse">
 <meta property="og:type" content="article">
-<meta property="og:title" content="聚类模型（纯文字）">
-<meta property="og:url" content="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/index.html">
+<meta property="og:title" content="python实现数据标准化、抽样">
+<meta property="og:url" content="http://yoursite.com/2019/07/01/python实现数据标准化、抽样/index.html">
 <meta property="og:site_name" content="forest">
-<meta property="og:description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta property="og:description" content="python实现数据标准化 Python3实现常用数据标准化方法    python实现数据抽样 Python pd.sample函数numpy.random.seed()函数    划分数据  Python 基本操作- 数据选取loc、iloc、ix函数      Python 基本操作- 数据选取loc、iloc、ix函数      python中的del用法      python的asse">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-14T09:19:05.552Z">
+<meta property="og:updated_time" content="2019-07-20T10:10:26.968Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="聚类模型（纯文字）">
-<meta name="twitter:description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta name="twitter:title" content="python实现数据标准化、抽样">
+<meta name="twitter:description" content="python实现数据标准化 Python3实现常用数据标准化方法    python实现数据抽样 Python pd.sample函数numpy.random.seed()函数    划分数据  Python 基本操作- 数据选取loc、iloc、ix函数      Python 基本操作- 数据选取loc、iloc、ix函数      python中的del用法      python的asse">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/01/python实现数据标准化、抽样/">
 
 
 
 
 
-  <title>聚类模型（纯文字） | forest</title>
+  <title>python实现数据标准化、抽样 | forest</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/python实现数据标准化、抽样/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="flaming">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">聚类模型（纯文字）</h1>
+          <h1 class="post-title" itemprop="name headline">python实现数据标准化、抽样</h1>
         
 
         <div class="post-meta">
@@ -356,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/py-scrap/" itemprop="url" rel="index">
-                    <span itemprop="name">py-scrap</span>
+                  <a href="/categories/ml-scrap/" itemprop="url" rel="index">
+                    <span itemprop="name">ml-scrap</span>
                   </a>
                 </span>
 
@@ -393,34 +393,38 @@
       
 
       
-        <h1 id="聚类模型"><a href="#聚类模型" class="headerlink" title="聚类模型"></a>聚类模型</h1><blockquote>
-<p><strong><a href="https://blog.csdn.net/u010865478/article/details/82708523" target="_blank" rel="noopener">参考资料</a></strong>  </p>
+        <h1 id="python实现数据标准化"><a href="#python实现数据标准化" class="headerlink" title="python实现数据标准化"></a>python实现数据标准化</h1><blockquote>
+<p><a href="https://blog.csdn.net/zzc15806/article/details/80712320" target="_blank" rel="noopener">Python3实现常用数据标准化方法</a>  </p>
 </blockquote>
-<p>​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。  </p>
-<h2 id="层次聚类"><a href="#层次聚类" class="headerlink" title="层次聚类"></a>层次聚类</h2><p>层次聚类分为两种：  </p>
-<ul>
-<li>一种是自底向上的凝聚层次聚类，  </li>
-<li>一种是自顶向下的分裂层次聚类。<br>两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可以用<strong>“欧式距离”</strong>。  </li>
-</ul>
-<ol>
-<li><p><strong>凝聚层次聚类</strong>：<br>输入：样本数据 D=$x_i$（i=1,2,…,m），<strong>相似性度量函数s</strong>，聚类簇数k<br>输出：k类样本  </p>
-<ol>
-<li>初始化每个样本为一个簇，$c_i$=$x_i$    </li>
-<li>计算样本两两之间的距离d(i,j)  </li>
-<li>通过相似性度量函数s，找出最相似的两个簇进行合并  </li>
-<li>直到簇数为k，否则循环  </li>
-</ol>
+<h1 id="python实现数据抽样"><a href="#python实现数据抽样" class="headerlink" title="python实现数据抽样"></a>python实现数据抽样</h1><blockquote>
+<p><a href="https://blog.csdn.net/qq_22238533/article/details/71080942" target="_blank" rel="noopener">Python pd.sample函数</a><br><a href="https://www.cnblogs.com/lliuye/p/8551660.html" target="_blank" rel="noopener">numpy.random.seed()函数</a>  </p>
+</blockquote>
+<h1 id="划分数据"><a href="#划分数据" class="headerlink" title="划分数据"></a>划分数据</h1><ol>
+<li><blockquote>
+<p><a href="https://www.jianshu.com/p/1115699e0674" target="_blank" rel="noopener">Python 基本操作- 数据选取loc、iloc、ix函数</a>  </p>
+</blockquote>
 </li>
-<li><p><strong>分裂层次聚类</strong>：<br>输入：样本数据D= $x_i$（i=1,2,…,m），<strong><a href="https://blog.csdn.net/zhangjunp3/article/details/80467350" target="_blank" rel="noopener">损失函数</a></strong>，聚类簇数k<br>输出：k类样本</p>
-<ol>
-<li>初始化每个样本为一个簇，$c_1$={$x_i$}    </li>
-<li>计算样本两两之间的距离d(i,j)  </li>
-<li>计算当前所有簇$c_i$的损失函数，选择损失最大的簇二分，<em>计算该簇下两点间距离,选择簇中最远的两个点作为类中心将簇进行二分</em></li>
-<li>直到簇数为k，否则循环  </li>
-</ol>
+<li><blockquote>
+<p><a href="https://www.jianshu.com/p/1115699e0674" target="_blank" rel="noopener">Python 基本操作- 数据选取loc、iloc、ix函数</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/windscloud/article/details/79732014" target="_blank" rel="noopener">python中的del用法</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/hao5335156/article/details/81170661" target="_blank" rel="noopener">python的assert基本用法</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/jasonzzj/article/details/53932645" target="_blank" rel="noopener">numpy.random.shuffle打乱顺序函数</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/qq_24753293/article/details/78338263" target="_blank" rel="noopener">python3中的groupby函数用法</a>  </p>
+</blockquote>
 </li>
 </ol>
-<p><em>(注脚无法加，列表无法并列)</em></p>
 
       
     </div>
@@ -455,8 +459,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/01/python实现数据标准化、抽样/" rel="next" title="python实现数据标准化、抽样">
-                <i class="fa fa-chevron-left"></i> python实现数据标准化、抽样
+              <a href="/2019/07/01/决策树/" rel="next" title="决策树">
+                <i class="fa fa-chevron-left"></i> 决策树
               </a>
             
           </div>
@@ -465,8 +469,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/01/马氏距离、python导入导出数据（草纸/" rel="prev" title="马氏距离、python导入数据（纯文字）">
-                马氏距离、python导入数据（纯文字） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/聚类模型（纯文字_草纸/" rel="prev" title="聚类模型（纯文字）">
+                聚类模型（纯文字） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -590,7 +594,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#聚类模型"><span class="nav-number">1.</span> <span class="nav-text">聚类模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#层次聚类"><span class="nav-number">1.1.</span> <span class="nav-text">层次聚类</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python实现数据标准化"><span class="nav-number">1.</span> <span class="nav-text">python实现数据标准化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#python实现数据抽样"><span class="nav-number">2.</span> <span class="nav-text">python实现数据抽样</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#划分数据"><span class="nav-number">3.</span> <span class="nav-text">划分数据</span></a></li></ol></div>
             
 
           </div>

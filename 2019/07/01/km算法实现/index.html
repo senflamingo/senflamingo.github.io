@@ -100,17 +100,17 @@
 
 
 
-<meta name="description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta name="description" content="km算法实现 主要资料资料2资料3资料4资料5   python中计算各类距离  解决问题： py的 def 函数具体格式错误   新手常见错误     numpy.argmin   详解     深拷贝、浅拷贝   详解1详解2       python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块     np.mean 求平均值   详解     空格显示">
 <meta property="og:type" content="article">
-<meta property="og:title" content="聚类模型（纯文字）">
-<meta property="og:url" content="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/index.html">
+<meta property="og:title" content="km算法实现">
+<meta property="og:url" content="http://yoursite.com/2019/07/01/km算法实现/index.html">
 <meta property="og:site_name" content="forest">
-<meta property="og:description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta property="og:description" content="km算法实现 主要资料资料2资料3资料4资料5   python中计算各类距离  解决问题： py的 def 函数具体格式错误   新手常见错误     numpy.argmin   详解     深拷贝、浅拷贝   详解1详解2       python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块     np.mean 求平均值   详解     空格显示">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-14T09:19:05.552Z">
+<meta property="og:updated_time" content="2019-07-18T01:54:35.225Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="聚类模型（纯文字）">
-<meta name="twitter:description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta name="twitter:title" content="km算法实现">
+<meta name="twitter:description" content="km算法实现 主要资料资料2资料3资料4资料5   python中计算各类距离  解决问题： py的 def 函数具体格式错误   新手常见错误     numpy.argmin   详解     深拷贝、浅拷贝   详解1详解2       python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块     np.mean 求平均值   详解     空格显示">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/01/km算法实现/">
 
 
 
 
 
-  <title>聚类模型（纯文字） | forest</title>
+  <title>km算法实现 | forest</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/km算法实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="flaming">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">聚类模型（纯文字）</h1>
+          <h1 class="post-title" itemprop="name headline">km算法实现</h1>
         
 
         <div class="post-meta">
@@ -356,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/py-scrap/" itemprop="url" rel="index">
-                    <span itemprop="name">py-scrap</span>
+                  <a href="/categories/ml-scrap/" itemprop="url" rel="index">
+                    <span itemprop="name">ml-scrap</span>
                   </a>
                 </span>
 
@@ -393,34 +393,37 @@
       
 
       
-        <h1 id="聚类模型"><a href="#聚类模型" class="headerlink" title="聚类模型"></a>聚类模型</h1><blockquote>
-<p><strong><a href="https://blog.csdn.net/u010865478/article/details/82708523" target="_blank" rel="noopener">参考资料</a></strong>  </p>
+        <h1 id="km算法实现"><a href="#km算法实现" class="headerlink" title="km算法实现"></a>km算法实现</h1><blockquote>
+<p><a href="https://www.cnblogs.com/shenfeng/p/kmeans_demo.html" target="_blank" rel="noopener">主要资料</a><br><a href="https://www.cnblogs.com/ahu-lichang/p/7161613.html" target="_blank" rel="noopener">资料2</a><br><a href="https://blog.csdn.net/louishao/article/details/76619159" target="_blank" rel="noopener">资料3</a><br><a href="https://github.com/HanXia001/k-means-python3-/blob/master/k-means%E5%AE%9E%E7%8E%B0.py" target="_blank" rel="noopener">资料4</a><br><a href="https://www.cnblogs.com/whatyouknow123/p/7501470.html" target="_blank" rel="noopener">资料5</a>  </p>
+<p><strong><a href="https://blog.csdn.net/xc_zhou/article/details/81535033" target="_blank" rel="noopener">python中计算各类距离</a></strong></p>
 </blockquote>
-<p>​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。  </p>
-<h2 id="层次聚类"><a href="#层次聚类" class="headerlink" title="层次聚类"></a>层次聚类</h2><p>层次聚类分为两种：  </p>
+<h2 id="解决问题："><a href="#解决问题：" class="headerlink" title="解决问题："></a>解决问题：</h2><ol>
+<li>py的 <code>def</code> 函数具体格式错误  <blockquote>
+<p><a href="https://blog.csdn.net/xc_zhou/article/details/81535033" target="_blank" rel="noopener">新手常见错误</a>  </p>
+</blockquote>
+</li>
+<li>numpy.argmin  <blockquote>
+<p><a href="https://blog.csdn.net/weixin_41770169/article/details/80714461" target="_blank" rel="noopener">详解</a>  </p>
+</blockquote>
+</li>
+<li>深拷贝、浅拷贝  <blockquote>
+<p><a href="https://www.runoob.com/w3cnote/python-append-deepcopy.html" target="_blank" rel="noopener">详解1</a><br><a href="https://www.cnblogs.com/liangyan-1989/p/8145469.html" target="_blank" rel="noopener">详解2</a>  </p>
+</blockquote>
+</li>
+</ol>
 <ul>
-<li>一种是自底向上的凝聚层次聚类，  </li>
-<li>一种是自顶向下的分裂层次聚类。<br>两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可以用<strong>“欧式距离”</strong>。  </li>
+<li>python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块  </li>
 </ul>
 <ol>
-<li><p><strong>凝聚层次聚类</strong>：<br>输入：样本数据 D=$x_i$（i=1,2,…,m），<strong>相似性度量函数s</strong>，聚类簇数k<br>输出：k类样本  </p>
-<ol>
-<li>初始化每个样本为一个簇，$c_i$=$x_i$    </li>
-<li>计算样本两两之间的距离d(i,j)  </li>
-<li>通过相似性度量函数s，找出最相似的两个簇进行合并  </li>
-<li>直到簇数为k，否则循环  </li>
-</ol>
+<li><code>np.mean</code> 求平均值  <blockquote>
+<p><a href="https://blog.csdn.net/lilong117194/article/details/78397329" target="_blank" rel="noopener">详解</a>  </p>
+</blockquote>
 </li>
-<li><p><strong>分裂层次聚类</strong>：<br>输入：样本数据D= $x_i$（i=1,2,…,m），<strong><a href="https://blog.csdn.net/zhangjunp3/article/details/80467350" target="_blank" rel="noopener">损失函数</a></strong>，聚类簇数k<br>输出：k类样本</p>
-<ol>
-<li>初始化每个样本为一个簇，$c_1$={$x_i$}    </li>
-<li>计算样本两两之间的距离d(i,j)  </li>
-<li>计算当前所有簇$c_i$的损失函数，选择损失最大的簇二分，<em>计算该簇下两点间距离,选择簇中最远的两个点作为类中心将簇进行二分</em></li>
-<li>直到簇数为k，否则循环  </li>
+<li>空格显示问题，修改用户文件  </li>
+<li>km算法出现RuntimeWarning: Mean of empty slice.错误：  <pre><code> 是因为len(points)可能为0  
+ &gt; [详解](https://blog.csdn.net/SAM2un/article/details/85016439)  
+</code></pre></li>
 </ol>
-</li>
-</ol>
-<p><em>(注脚无法加，列表无法并列)</em></p>
 
       
     </div>
@@ -455,8 +458,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/01/python实现数据标准化、抽样/" rel="next" title="python实现数据标准化、抽样">
-                <i class="fa fa-chevron-left"></i> python实现数据标准化、抽样
+              <a href="/2019/07/01/搭建博客（草纸/" rel="next" title="建立博客">
+                <i class="fa fa-chevron-left"></i> 建立博客
               </a>
             
           </div>
@@ -465,8 +468,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/01/马氏距离、python导入导出数据（草纸/" rel="prev" title="马氏距离、python导入数据（纯文字）">
-                马氏距离、python导入数据（纯文字） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/markdown（草纸/" rel="prev" title="Markdown">
+                Markdown <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -590,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#聚类模型"><span class="nav-number">1.</span> <span class="nav-text">聚类模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#层次聚类"><span class="nav-number">1.1.</span> <span class="nav-text">层次聚类</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#km算法实现"><span class="nav-number">1.</span> <span class="nav-text">km算法实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决问题："><span class="nav-number">1.1.</span> <span class="nav-text">解决问题：</span></a></li></ol></li></ol></div>
             
 
           </div>

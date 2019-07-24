@@ -100,17 +100,17 @@
 
 
 
-<meta name="description" content="km算法实现 主要资料资料2资料3资料4资料5   python中计算各类距离  解决问题： py的 def 函数具体格式错误   新手常见错误     numpy.argmin   详解     深拷贝、浅拷贝   详解1详解2       python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块     np.mean 求平均值   详解     空格显示">
+<meta name="description" content="回归线性回归 参考    逻辑回归 参考     np.sum的应用    参考     注意if __name__ == &amp;#39;__main__&amp;#39;:    参考     python切片及索引    Python 对字符串切片及翻转Python中的常用集中索引化方式python小白之数组索引     numpy insert    numpy.insert用法以及内插插0的方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="forest">
-<meta property="og:url" content="http://yoursite.com/2019/07/15/km算法实现/index.html">
+<meta property="og:title" content="回归算法实现">
+<meta property="og:url" content="http://yoursite.com/2019/07/01/回归算法实现/index.html">
 <meta property="og:site_name" content="forest">
-<meta property="og:description" content="km算法实现 主要资料资料2资料3资料4资料5   python中计算各类距离  解决问题： py的 def 函数具体格式错误   新手常见错误     numpy.argmin   详解     深拷贝、浅拷贝   详解1详解2       python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块     np.mean 求平均值   详解     空格显示">
+<meta property="og:description" content="回归线性回归 参考    逻辑回归 参考     np.sum的应用    参考     注意if __name__ == &amp;#39;__main__&amp;#39;:    参考     python切片及索引    Python 对字符串切片及翻转Python中的常用集中索引化方式python小白之数组索引     numpy insert    numpy.insert用法以及内插插0的方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T08:56:01.850Z">
+<meta property="og:updated_time" content="2019-07-23T02:04:52.475Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="forest">
-<meta name="twitter:description" content="km算法实现 主要资料资料2资料3资料4资料5   python中计算各类距离  解决问题： py的 def 函数具体格式错误   新手常见错误     numpy.argmin   详解     深拷贝、浅拷贝   详解1详解2       python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块     np.mean 求平均值   详解     空格显示">
+<meta name="twitter:title" content="回归算法实现">
+<meta name="twitter:description" content="回归线性回归 参考    逻辑回归 参考     np.sum的应用    参考     注意if __name__ == &amp;#39;__main__&amp;#39;:    参考     python切片及索引    Python 对字符串切片及翻转Python中的常用集中索引化方式python小白之数组索引     numpy insert    numpy.insert用法以及内插插0的方法">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/15/km算法实现/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/01/回归算法实现/">
 
 
 
 
 
-  <title> | forest</title>
+  <title>回归算法实现 | forest</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/15/km算法实现/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/回归算法实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="flaming">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">回归算法实现</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-15T16:49:44+08:00">
-                2019-07-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-01T00:00:00+08:00">
+                2019-07-01
               </time>
             
 
@@ -343,6 +343,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ml-scrap/" itemprop="url" rel="index">
+                    <span itemprop="name">ml-scrap</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -371,36 +393,38 @@
       
 
       
-        <h1 id="km算法实现"><a href="#km算法实现" class="headerlink" title="km算法实现"></a>km算法实现</h1><blockquote>
-<p><a href="https://www.cnblogs.com/shenfeng/p/kmeans_demo.html" target="_blank" rel="noopener">主要资料</a><br><a href="https://www.cnblogs.com/ahu-lichang/p/7161613.html" target="_blank" rel="noopener">资料2</a><br><a href="https://blog.csdn.net/louishao/article/details/76619159" target="_blank" rel="noopener">资料3</a><br><a href="https://github.com/HanXia001/k-means-python3-/blob/master/k-means%E5%AE%9E%E7%8E%B0.py" target="_blank" rel="noopener">资料4</a><br><a href="https://www.cnblogs.com/whatyouknow123/p/7501470.html" target="_blank" rel="noopener">资料5</a>  </p>
-<p><strong><a href="https://blog.csdn.net/xc_zhou/article/details/81535033" target="_blank" rel="noopener">python中计算各类距离</a></strong></p>
+        <h1 id="回归"><a href="#回归" class="headerlink" title="回归"></a>回归</h1><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><blockquote>
+<p><a href="https://www.jianshu.com/p/708bcd7ae141" target="_blank" rel="noopener">参考</a>  </p>
 </blockquote>
-<h2 id="解决问题："><a href="#解决问题：" class="headerlink" title="解决问题："></a>解决问题：</h2><ol>
-<li>py的 <code>def</code> 函数具体格式错误  <blockquote>
-<p><a href="https://blog.csdn.net/xc_zhou/article/details/81535033" target="_blank" rel="noopener">新手常见错误</a>  </p>
+<h2 id="逻辑回归"><a href="#逻辑回归" class="headerlink" title="逻辑回归"></a>逻辑回归</h2><blockquote>
+<p><a href="https://www.jianshu.com/p/4cfb4f734358" target="_blank" rel="noopener">参考</a>  </p>
 </blockquote>
-</li>
-<li>numpy.argmin  <blockquote>
-<p><a href="https://blog.csdn.net/weixin_41770169/article/details/80714461" target="_blank" rel="noopener">详解</a>  </p>
-</blockquote>
-</li>
-<li>深拷贝、浅拷贝  <blockquote>
-<p><a href="https://www.runoob.com/w3cnote/python-append-deepcopy.html" target="_blank" rel="noopener">详解1</a><br><a href="https://www.cnblogs.com/liangyan-1989/p/8145469.html" target="_blank" rel="noopener">详解2</a>  </p>
-</blockquote>
-</li>
-</ol>
-<ul>
-<li>python3中，直接可以使用copy（）方法，但deepcopy（）还是需要导入copy模块  </li>
-</ul>
 <ol>
-<li><code>np.mean</code> 求平均值  <blockquote>
-<p><a href="https://blog.csdn.net/lilong117194/article/details/78397329" target="_blank" rel="noopener">详解</a>  </p>
+<li><p>np.sum的应用  </p>
+<blockquote>
+<p><a href="https://blog.csdn.net/leekingsen/article/details/76242244" target="_blank" rel="noopener">参考</a>  </p>
 </blockquote>
 </li>
-<li>空格显示问题，修改用户文件  </li>
-<li>km算法出现RuntimeWarning: Mean of empty slice.错误：  <pre><code> 是因为len(points)可能为0  
- &gt; [详解](https://blog.csdn.net/SAM2un/article/details/85016439)  
-</code></pre></li>
+<li><p>注意<code>if __name__ == &#39;__main__&#39;</code>:  </p>
+<blockquote>
+<p><a href="https://blog.csdn.net/zhusongziye/article/details/79505803" target="_blank" rel="noopener">参考</a>  </p>
+</blockquote>
+</li>
+<li><p>python切片及索引  </p>
+<blockquote>
+<p><a href="https://www.runoob.com/python3/python-slicing-rotate-string.html" target="_blank" rel="noopener">Python 对字符串切片及翻转</a><br><a href="https://blog.csdn.net/Together_CZ/article/details/79593952" target="_blank" rel="noopener">Python中的常用集中索引化方式</a><br><a href="https://www.cnblogs.com/hyacinthwyd/p/8986389.html" target="_blank" rel="noopener">python小白之数组索引</a>  </p>
+</blockquote>
+</li>
+<li><p>numpy insert  </p>
+<blockquote>
+<p><a href="https://blog.csdn.net/lcxxcl_1234/article/details/80869152" target="_blank" rel="noopener">numpy.insert用法以及内插插0的方法</a>  </p>
+</blockquote>
+</li>
+<li><p>基于sklearn的python数据可视化  </p>
+<blockquote>
+<p><a href="https://www.jianshu.com/p/3bb2cc453df1" target="_blank" rel="noopener">基于Python的数据可视化：从一维到多维</a><br>其中<strong>主成分分析法</strong>采取降维的方法</p>
+</blockquote>
+</li>
 </ol>
 
       
@@ -436,8 +460,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/01/搭建博客（草纸/" rel="next" title="建立博客">
-                <i class="fa fa-chevron-left"></i> 建立博客
+              <a href="/2019/07/01/爬虫1/" rel="next" title="python爬虫">
+                <i class="fa fa-chevron-left"></i> python爬虫
               </a>
             
           </div>
@@ -446,8 +470,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/15/回归算法实现/" rel="prev" title>
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/搭建博客（草纸/" rel="prev" title="建立博客">
+                建立博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -525,7 +549,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -536,7 +560,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -571,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#km算法实现"><span class="nav-number">1.</span> <span class="nav-text">km算法实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决问题："><span class="nav-number">1.1.</span> <span class="nav-text">解决问题：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#回归"><span class="nav-number">1.</span> <span class="nav-text">回归</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性回归"><span class="nav-number">1.1.</span> <span class="nav-text">线性回归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑回归"><span class="nav-number">1.2.</span> <span class="nav-text">逻辑回归</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -778,6 +802,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

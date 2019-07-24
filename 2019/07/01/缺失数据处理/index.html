@@ -100,17 +100,17 @@
 
 
 
-<meta name="description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta name="description" content="缺失值处理方法全面列举 处理不完备数据集的方法主要有以下三大类：（一）删除元组也就是将存在遗漏信息属性值的对象（元组，记录）删除，从而得到一个完备的信息表。    使用情形：在对象有 多个属性缺失值 、被删除的含缺失值的对象与信息表中的数据量相比非常小的情况下是非常有效的；  类标号（假设是分类任务）缺少时通常使用   缺陷：当遗漏数据所占比例较大，特别当遗漏数据非随机分布时，这种方法可能导致数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="聚类模型（纯文字）">
-<meta property="og:url" content="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/index.html">
+<meta property="og:title" content="缺失数据处理">
+<meta property="og:url" content="http://yoursite.com/2019/07/01/缺失数据处理/index.html">
 <meta property="og:site_name" content="forest">
-<meta property="og:description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta property="og:description" content="缺失值处理方法全面列举 处理不完备数据集的方法主要有以下三大类：（一）删除元组也就是将存在遗漏信息属性值的对象（元组，记录）删除，从而得到一个完备的信息表。    使用情形：在对象有 多个属性缺失值 、被删除的含缺失值的对象与信息表中的数据量相比非常小的情况下是非常有效的；  类标号（假设是分类任务）缺少时通常使用   缺陷：当遗漏数据所占比例较大，特别当遗漏数据非随机分布时，这种方法可能导致数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-14T09:19:05.552Z">
+<meta property="og:updated_time" content="2019-07-20T02:46:46.622Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="聚类模型（纯文字）">
-<meta name="twitter:description" content="聚类模型 参考资料    ​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。   层次聚类层次聚类分为两种：    一种是自底向上的凝聚层次聚类，   一种是自顶向下的分裂层次聚类。两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可">
+<meta name="twitter:title" content="缺失数据处理">
+<meta name="twitter:description" content="缺失值处理方法全面列举 处理不完备数据集的方法主要有以下三大类：（一）删除元组也就是将存在遗漏信息属性值的对象（元组，记录）删除，从而得到一个完备的信息表。    使用情形：在对象有 多个属性缺失值 、被删除的含缺失值的对象与信息表中的数据量相比非常小的情况下是非常有效的；  类标号（假设是分类任务）缺少时通常使用   缺陷：当遗漏数据所占比例较大，特别当遗漏数据非随机分布时，这种方法可能导致数">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/01/缺失数据处理/">
 
 
 
 
 
-  <title>聚类模型（纯文字） | forest</title>
+  <title>缺失数据处理 | forest</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/聚类模型（纯文字_草纸/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/01/缺失数据处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="flaming">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">聚类模型（纯文字）</h1>
+          <h1 class="post-title" itemprop="name headline">缺失数据处理</h1>
         
 
         <div class="post-meta">
@@ -393,34 +393,55 @@
       
 
       
-        <h1 id="聚类模型"><a href="#聚类模型" class="headerlink" title="聚类模型"></a>聚类模型</h1><blockquote>
-<p><strong><a href="https://blog.csdn.net/u010865478/article/details/82708523" target="_blank" rel="noopener">参考资料</a></strong>  </p>
-</blockquote>
-<p>​一般来说，聚类是在训练样本的标签信息不知的情况下，学习样本内在的性质和规律，将有限的集合划分成c类。  </p>
-<h2 id="层次聚类"><a href="#层次聚类" class="headerlink" title="层次聚类"></a>层次聚类</h2><p>层次聚类分为两种：  </p>
+        <blockquote>
+<p><a href="https://www.cnblogs.com/magle/articles/6110195.html" target="_blank" rel="noopener">缺失值处理方法全面列举</a></p>
+<h2 id="处理不完备数据集的方法主要有以下三大类："><a href="#处理不完备数据集的方法主要有以下三大类：" class="headerlink" title="处理不完备数据集的方法主要有以下三大类："></a>处理不完备数据集的方法主要有以下三大类：</h2><h3 id="（一）删除元组"><a href="#（一）删除元组" class="headerlink" title="（一）删除元组"></a>（一）删除元组</h3><p>也就是将存在遗漏信息属性值的对象（元组，记录）删除，从而得到一个完备的信息表。  </p>
 <ul>
-<li>一种是自底向上的凝聚层次聚类，  </li>
-<li>一种是自顶向下的分裂层次聚类。<br>两者的区别在于前者一开始将每一个样本看作一类，通过不断的合并最相似的两个簇，直到c类；后者一开始将所有样本看作一类，通过最小化损失（类紧致）分裂为c类。类相似性度量可以用<strong>“欧式距离”</strong>。  </li>
+<li><strong>使用情形：</strong>在对象有 <strong>多个属性缺失值</strong> 、被删除的含缺失值的对象与信息表中的数据量相比非常小的情况下是非常有效的；  类标号（假设是分类任务）缺少时通常使用  </li>
+<li><strong>缺陷：</strong>当遗漏数据所<strong>占比例较大</strong>，特别当遗漏数据<strong>非随机分布</strong>时，这种方法可能导致数据发生偏离  </li>
+</ul>
+</blockquote>
+<h3 id="（二）数据补齐"><a href="#（二）数据补齐" class="headerlink" title="（二）数据补齐"></a>（二）数据补齐</h3><ol>
+<li>人工填写（filling manually)<br>这个方法产生数据偏离最小，可能是填充效果最好的一种</li>
+<li>特殊值填充（Treating Missing Attribute values as Special values）<br>将空值作为一种特殊的属性值来处理，它<strong>不同于其他的任何属性值</strong>。如所有的空值都用“unknown”填充。<strong>可能导致严重的数据偏离</strong>，一般不推荐使用。  </li>
+<li><strong>平均值填充</strong>（Mean/Mode Completer）   <ul>
+<li>数值型:就根据该属性在其他所有对象的取值的<strong>平均值</strong></li>
+<li>非数值型:根据统计学中的<strong>众数原理</strong>，用该属性在其他所有对象的取值次数最多的值(即出现频率最高的值)来补齐该缺失的属性值</li>
+<li>条件平均值填充法:同样是靠该属性在其他对象中的取值求平均得到，但不同的是用于求平均的值并不是从信息表所有对象中取，而是从与该对象具有<strong>相同决策属性值</strong>的对象中取得。</li>
+</ul>
+</li>
+<li>热卡填充<br>热卡填充法在完整数据中找到一个与它最相似的对象，然后用这个<strong>相似对象</strong>的值来进行填充。不同的问题可能会选用不同的标准来对相似进行判定。  </li>
+</ol>
+<ul>
+<li><strong>问题：</strong>难以定义相似标准，主观因素较多。  </li>
 </ul>
 <ol>
-<li><p><strong>凝聚层次聚类</strong>：<br>输入：样本数据 D=$x_i$（i=1,2,…,m），<strong>相似性度量函数s</strong>，聚类簇数k<br>输出：k类样本  </p>
-<ol>
-<li>初始化每个样本为一个簇，$c_i$=$x_i$    </li>
-<li>计算样本两两之间的距离d(i,j)  </li>
-<li>通过相似性度量函数s，找出最相似的两个簇进行合并  </li>
-<li>直到簇数为k，否则循环  </li>
+<li><strong>K最近距离邻法</strong><br>先根据<strong>欧式距离</strong>或相关分析来确定距离具有缺失数据样本最近的<strong>K个</strong>样本，将这K个值<strong>加权平均</strong>来估计该样本的缺失数据。<br>用<strong>层次聚类模型</strong>预测缺失变量的类型，再以该类型的均值插补。假设X=(X1,X2…Xp)为信息完全的变量，Y为存在缺失值的变量，那么首先对X或其子集行聚类，然后按缺失个案所属类来插补不同类的均值。如果在以后统计分析中还需以引入的解释变量和Y做分析，那么这种插补方法将在模型中引入自相关，给分析造成障碍。  </li>
+<li>使用所有可能的值填充  </li>
+<li>组合完整化方法  </li>
 </ol>
-</li>
-<li><p><strong>分裂层次聚类</strong>：<br>输入：样本数据D= $x_i$（i=1,2,…,m），<strong><a href="https://blog.csdn.net/zhangjunp3/article/details/80467350" target="_blank" rel="noopener">损失函数</a></strong>，聚类簇数k<br>输出：k类样本</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><blockquote>
+<p><a href="https://blog.csdn.net/weixin_42902413/article/details/87856623" target="_blank" rel="noopener">缺失值处理python实现</a>  </p>
+</blockquote>
+<h3 id="1-删除缺失值"><a href="#1-删除缺失值" class="headerlink" title="1.删除缺失值"></a>1.删除缺失值</h3><blockquote>
+<p><a href="https://blog.csdn.net/qq_21840201/article/details/81004363" target="_blank" rel="noopener">删除缺失值</a>  </p>
 <ol>
-<li>初始化每个样本为一个簇，$c_1$={$x_i$}    </li>
-<li>计算样本两两之间的距离d(i,j)  </li>
-<li>计算当前所有簇$c_i$的损失函数，选择损失最大的簇二分，<em>计算该簇下两点间距离,选择簇中最远的两个点作为类中心将簇进行二分</em></li>
-<li>直到簇数为k，否则循环  </li>
-</ol>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/qq_40825479/article/details/83544430" target="_blank" rel="noopener"><br>Python pandas库中的isnull()函数</a>  </p>
+</blockquote>
 </li>
 </ol>
-<p><em>(注脚无法加，列表无法并列)</em></p>
+</blockquote>
+<h3 id="2-填补"><a href="#2-填补" class="headerlink" title="2. 填补"></a>2. 填补</h3><ol>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/kane7csdn/article/details/84795405" target="_blank" rel="noopener">Python中的scipy.stats.mode函数</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/brucewong0516/article/details/80406564" target="_blank" rel="noopener">详解pandas.DataFrame.fillna( )函数</a>  </p>
+</blockquote>
+</li>
+</ol>
 
       
     </div>
@@ -455,18 +476,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/01/python实现数据标准化、抽样/" rel="next" title="python实现数据标准化、抽样">
-                <i class="fa fa-chevron-left"></i> python实现数据标准化、抽样
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/01/马氏距离、python导入导出数据（草纸/" rel="prev" title="马氏距离、python导入数据（纯文字）">
-                马氏距离、python导入数据（纯文字） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/决策树/" rel="prev" title="决策树">
+                决策树 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -590,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#聚类模型"><span class="nav-number">1.</span> <span class="nav-text">聚类模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#层次聚类"><span class="nav-number">1.1.</span> <span class="nav-text">层次聚类</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#处理不完备数据集的方法主要有以下三大类："><span class="nav-number">1.</span> <span class="nav-text">处理不完备数据集的方法主要有以下三大类：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（一）删除元组"><span class="nav-number">1.1.</span> <span class="nav-text">（一）删除元组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（二）数据补齐"><span class="nav-number">1.2.</span> <span class="nav-text">（二）数据补齐</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-删除缺失值"><span class="nav-number">2.1.</span> <span class="nav-text">1.删除缺失值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-填补"><span class="nav-number">2.2.</span> <span class="nav-text">2. 填补</span></a></li></ol></li></ol></div>
             
 
           </div>
