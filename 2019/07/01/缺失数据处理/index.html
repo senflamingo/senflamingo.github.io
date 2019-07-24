@@ -13,15 +13,11 @@
 <meta name="theme-color" content="#222">
 
 <script>
-    (function () {
-        if ('') {
-            if (prompt('请输入文章密码') !== '') {
-                alert('密码错误！');
-                if (history.length === 1) {
-                    location.replace("https://senflamingo.github.io/"); // 这里替换成你的首页
-                } else {
-                    history.back();
-                }
+    (function(){
+        if(''){
+            if (prompt('请输入查看密码') !== ''){
+                alert('密码错误');
+                history.back();
             }
         }
     })();
@@ -476,14 +472,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/07/01/聚类模型（纯文字_草纸/" rel="next" title="聚类模型（纯文字）">
+                <i class="fa fa-chevron-left"></i> 聚类模型（纯文字）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/01/马氏距离、python导入导出数据（草纸/" rel="prev" title="马氏距离、python导入数据（纯文字）">
-                马氏距离、python导入数据（纯文字） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/搭建博客（草纸/" rel="prev" title="建立博客">
+                建立博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
