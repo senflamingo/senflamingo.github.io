@@ -96,17 +96,17 @@
 
 
 
-<meta name="description" content="SVM  numpy中的tile函数      Python的reshape(-1,1)      numpy tolist()的用法     TypeError: &amp;#39;(slice(None, None, None), 1)&amp;#39; is an invalid key可能是操作的（df）是一个dataframe，应该先把它转化为ndarray，运用语句df = df.values">
+<meta name="description" content="SVMsvm： 二分类问题：在两类点中间求一个平面可以把两类点最优化分开   上述“最优”原则为：使样本中离超平面最近的点到超平面的距离最远，得到一个带有不等式约束条件的目标函数   利用拉格朗日乘子法化简目标函数，成一个求解其最大最小值的式子A   在A式中，代入偏导数=0的式子，将需要求解最值的变量消去   求出拉格朗日乘子，即可求出所求平面   SMO算法的步骤    SMO算法： 随机取一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="svm">
 <meta property="og:url" content="http://yoursite.com/2019/07/01/svm/index.html">
 <meta property="og:site_name" content="forest">
-<meta property="og:description" content="SVM  numpy中的tile函数      Python的reshape(-1,1)      numpy tolist()的用法     TypeError: &amp;#39;(slice(None, None, None), 1)&amp;#39; is an invalid key可能是操作的（df）是一个dataframe，应该先把它转化为ndarray，运用语句df = df.values">
+<meta property="og:description" content="SVMsvm： 二分类问题：在两类点中间求一个平面可以把两类点最优化分开   上述“最优”原则为：使样本中离超平面最近的点到超平面的距离最远，得到一个带有不等式约束条件的目标函数   利用拉格朗日乘子法化简目标函数，成一个求解其最大最小值的式子A   在A式中，代入偏导数=0的式子，将需要求解最值的变量消去   求出拉格朗日乘子，即可求出所求平面   SMO算法的步骤    SMO算法： 随机取一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-24T09:19:27.865Z">
+<meta property="og:updated_time" content="2019-07-30T10:58:56.797Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="svm">
-<meta name="twitter:description" content="SVM  numpy中的tile函数      Python的reshape(-1,1)      numpy tolist()的用法     TypeError: &amp;#39;(slice(None, None, None), 1)&amp;#39; is an invalid key可能是操作的（df）是一个dataframe，应该先把它转化为ndarray，运用语句df = df.values">
+<meta name="twitter:description" content="SVMsvm： 二分类问题：在两类点中间求一个平面可以把两类点最优化分开   上述“最优”原则为：使样本中离超平面最近的点到超平面的距离最远，得到一个带有不等式约束条件的目标函数   利用拉格朗日乘子法化简目标函数，成一个求解其最大最小值的式子A   在A式中，代入偏导数=0的式子，将需要求解最值的变量消去   求出拉格朗日乘子，即可求出所求平面   SMO算法的步骤    SMO算法： 随机取一">
 
 
 
@@ -389,7 +389,28 @@
       
 
       
-        <h1 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h1><ol>
+        <h1 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h1><h2 id="svm："><a href="#svm：" class="headerlink" title="svm："></a>svm：</h2><ol>
+<li>二分类问题：在两类点中间求一个平面可以把两类点最优化分开  </li>
+<li>上述“最优”原则为：使样本中离超平面最近的点到超平面的距离最远，得到一个带有不等式约束条件的目标函数  </li>
+<li>利用拉格朗日乘子法化简目标函数，成一个求解其最大最小值的式子A  </li>
+<li>在A式中，代入偏导数=0的式子，将需要求解最值的变量消去  </li>
+<li>求出拉格朗日乘子，即可求出所求平面  <blockquote>
+<p><a href="https://blog.csdn.net/v_july_v/article/details/7624837" target="_blank" rel="noopener">SMO算法的步骤</a></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="SMO算法："><a href="#SMO算法：" class="headerlink" title="SMO算法："></a>SMO算法：</h2><ol>
+<li>随机取一列alpha，首先选取违背目标函数条件最严重的alpha1，再选取与alpha1一起更新后变化可以达到最大的alpha2进行优化  </li>
+<li>根据KKT条件，可得到目标函数中alpha需要满足的条件  </li>
+<li>其中，优化时选择支持向量进行优化</li>
+</ol>
+<blockquote>
+<p><a href="https://blog.csdn.net/suipingsp/article/details/41645779/" target="_blank" rel="noopener">机器学习经典算法详解及Python实现—基于SMO的SVM分类器</a><br><a href="https://blog.csdn.net/luanpeng825485697/article/details/78823919" target="_blank" rel="noopener">SMO算法的步骤</a><br><a href="https://www.yuque.com/liwenju/kadtqt/uryubz" target="_blank" rel="noopener">用讲故事的办法帮你理解SMO算法</a></p>
+</blockquote>
+<h2 id="梯度下降算法："><a href="#梯度下降算法：" class="headerlink" title="梯度下降算法："></a>梯度下降算法：</h2><blockquote>
+<p><a href="http://liuhongjiang.github.io/tech/blog/2013/01/31/svm-pegasos/" target="_blank" rel="noopener">Pegasos算法</a></p>
+</blockquote>
+<h2 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h2><ol>
 <li><blockquote>
 <p><a href="https://blog.csdn.net/ksearch/article/details/21388985" target="_blank" rel="noopener">numpy中的tile函数</a>  </p>
 </blockquote>
@@ -402,9 +423,30 @@
 <p><a href="https://blog.csdn.net/lilong117194/article/details/78437224" target="_blank" rel="noopener">numpy tolist()的用法</a>  </p>
 </blockquote>
 </li>
-<li><p><code>TypeError: &#39;(slice(None, None, None), 1)&#39; is an invalid key</code><br>可能是操作的（df）是一个dataframe，应该先把它转化为ndarray，运用语句<code>df = df.values</code></p>
+<li><p><code>TypeError: &#39;(slice(None, None, None), 1)&#39; is an invalid key</code><br>可能是操作的（df）是一个dataframe，应该先把它转化为ndarray，运用语句<code>df = df.values</code>  </p>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/lilong117194/article/details/78288795" target="_blank" rel="noopener">Python中flatten( ),matrix.A用法</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/Ben_xk/article/details/89397345" target="_blank" rel="noopener">SVM 代码解释：<code>validEcacheList = nonzero(oS.eCache[:, 0].A)[0]</code></a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/qq_41185868/article/details/80502658" target="_blank" rel="noopener">成功解决NameError: name ‘apply’ is not defined</a>  </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><a href="https://blog.csdn.net/tao546377318/article/details/52160543" target="_blank" rel="noopener">python中的enumerate函数</a>  </p>
+</blockquote>
+</li>
+<li><p><a href="https://www.jianshu.com/p/238d0eae00d8" target="_blank" rel="noopener">Numpy之访问和删除 ndarray 中的元素及向其中插入元素</a>  </p>
 </li>
 </ol>
+<h2 id="SVR"><a href="#SVR" class="headerlink" title="SVR"></a>SVR</h2><blockquote>
+<p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR" target="_blank" rel="noopener">SVR官方文档1</a><br><a href="https://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#sphx-glr-auto-examples-svm-plot-svm-regression-py" target="_blank" rel="noopener">SVR官方文档2</a></p>
+</blockquote>
 
       
     </div>
@@ -449,8 +491,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/01/python实现数据标准化、抽样/" rel="prev" title="python实现数据标准化、抽样">
-                python实现数据标准化、抽样 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/python数据可视化/" rel="prev" title="python数据可视化">
+                python数据可视化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -528,7 +570,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -539,7 +581,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -574,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SVM"><span class="nav-number">1.</span> <span class="nav-text">SVM</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SVM"><span class="nav-number">1.</span> <span class="nav-text">SVM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#svm："><span class="nav-number">1.1.</span> <span class="nav-text">svm：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SMO算法："><span class="nav-number">1.2.</span> <span class="nav-text">SMO算法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#梯度下降算法："><span class="nav-number">1.3.</span> <span class="nav-text">梯度下降算法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#细节"><span class="nav-number">1.4.</span> <span class="nav-text">细节</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVR"><span class="nav-number">1.5.</span> <span class="nav-text">SVR</span></a></li></ol></li></ol></div>
             
 
           </div>
